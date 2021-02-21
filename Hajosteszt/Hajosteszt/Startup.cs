@@ -25,9 +25,12 @@ namespace Hajosteszt
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseHttpsRedirection();
 
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
             app.UseRouting();
-
+            //        await context.Response.WriteAsync("Hello World!");
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGet("/", async context =>
