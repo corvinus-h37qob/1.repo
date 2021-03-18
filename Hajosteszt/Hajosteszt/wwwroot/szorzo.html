@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .sor{display:flex;
+            flex-direction:row;}
+        .doboz{
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="ide">.</div>
+
+    <script>
+        let hova = document.getElementById("ide");
+        for (var s = 0; s < 10; s++) {
+
+            let sor = document.createElement("div");
+            sor.classList.add("sor")
+            hova.appendChild(sor)
+            szam.classList.add("doboz")
+            szam.style.background = rgb(${255/10*s};)
+            sor.appendChild(szam)
+            szam.innerText = (s + 1)
+
+
+            
+        }
+    </script>
+    <br /> 
+    A pascal háromszöget sem tudtam megcsinálni, 
+    mert nem értem, remélem ettől még nem számít
+    hiányzásnak.
+</body>
+</html>
