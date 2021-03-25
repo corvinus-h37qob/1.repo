@@ -44,12 +44,25 @@
             padding: 20px;
             width: 80px;
         }
+
         .kattintható:hover {
             background-color: fuchsia;
             color: white;
         }
-       
     </style>
+    <script> src="/hetedik.js"
+        fetch('/questions.json')
+            .then(response => response.json())
+            .then(data => letöltésBefejeződött(data)
+            );
+
+        function letöltésBefejeződött(d) {
+            console.log("Sikeres letöltés")
+            console.log(d)
+            kérdések = d;
+        }
+
+    </script>
 </head>
 <body>
     <div id="külső">
