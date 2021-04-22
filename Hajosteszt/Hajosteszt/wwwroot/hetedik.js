@@ -19,6 +19,7 @@ function elore() {
         kérdésszám++;
         letöltés();
     }
+    //innen van a 9.óra anyaga
     fetch('/questions/4')
         .then(response => response.json())
         .then(data => console.log(data)
